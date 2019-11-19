@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match snapshot with all information passing in correctly 1`] = `
+<section
+  className="app"
+>
+  <h1>
+    What's New?
+  </h1>
+  <Menu
+    allNews={Object {}}
+    filterNews={[Function]}
+  />
+  <SearchForm
+    searchNews={[Function]}
+  />
+  <NewsContainer
+    currentNews={Array []}
+  />
+</section>
+`;
