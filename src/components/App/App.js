@@ -22,7 +22,7 @@ class App extends Component {
   render () {
     return (
       <section className="app">
-        <NewsContainer allNews={this.state.allNews} />
+        <NewsContainer currentNews={this.state.currentNews} />
       </section>
     );
   }

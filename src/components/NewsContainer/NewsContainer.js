@@ -1,10 +1,17 @@
 import React from 'react';
-import './NewsContainer.css'
+import './NewsContainer.css';
+import NewsArticle from '../NewsArticle/NewsArticle';
 
-const NewsContainer = ({ allNews }) => {
+const NewsContainer = ({ currentNews }) => {
+  const theNews = currentNews.map((news) => {
+      return (
+        <NewsArticle key={news.id} {...news} />
+      )
+  })
+
   return (
     <section className='news-container'>
-
+       {theNews}
     </section>
   )
 }
