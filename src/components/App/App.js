@@ -7,8 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      allNews: [],
-      currentNews: local,
+      allNews: {},
+      currentNews: [],
       hasError: ''
     }
   }
@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     fetch('https://whats-new-api.herokuapp.com/api/v1/news')
     .then(resp => resp.json())
-    .then(data => this.setState({ allNews : data }))
+    .then(data => this.setState({ allNews : data, currentNews : data.local }))
     .catch(error => this.setState({ hasError : error }))
   }
 
