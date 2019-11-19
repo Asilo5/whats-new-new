@@ -20,6 +20,7 @@ class App extends Component {
   }
 
   render () {
+    console.log(this.state.currentNews)
     return (
       <section className="app">
         <NewsContainer currentNews={this.state.currentNews} />
