@@ -39,7 +39,7 @@ class App extends Component {
         <h1>What's New?</h1>
         <Menu allNews={this.state.allNews} filterNews={this.filterNews} />
         <SearchForm searchNews={this.searchNews} />
-        <NewsContainer currentNews={this.state.currentNews} />
+        {/* <NewsContainer currentNews={this.state.currentNews} /> */}
       </section>
     );
   }
