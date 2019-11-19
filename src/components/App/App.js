@@ -34,7 +34,6 @@ class App extends Component {
   }
 
   render () {
-    console.log(this.state.currentNews)
     return (
       <section className="app">
         <h1>What's New?</h1>
