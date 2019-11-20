@@ -4,10 +4,19 @@
     border-top: 1px rgb(182, 182, 182) solid;
 }
 
-.menu > button {
+   button { 
     font-size: 20px;
     padding: 10px;
     margin: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
+
+
+button:hover {
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+
