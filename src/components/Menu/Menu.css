@@ -1,0 +1,22 @@
+.menu {
+    text-align: center;
+    border-bottom: 1px black solid;
+    border-top: 1px rgb(182, 182, 182) solid;
+}
+
+button { 
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+button:hover {
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+

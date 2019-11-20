@@ -1,9 +1,9 @@
 import React from 'react';
-import './Menu.css'
+import './Menu.css'; 
 
 const Menu = ({ allNews, filterNews }) => {
     return (
-        <section>
+        <section className='menu'>
             <button onClick={() => filterNews(allNews.local)} >Local News</button>
             <button onClick={() => filterNews(allNews.technology)} >Technology</button>
             <button onClick={() => filterNews(allNews.entertainment)} >Entertainment</button>
