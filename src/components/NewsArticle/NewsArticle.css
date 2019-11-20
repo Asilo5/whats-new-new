@@ -1,0 +1,13 @@
+.news-article {
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+.news-article > img{
+    height: 24em;
+    margin: 20px auto;
+    display: block;
+}

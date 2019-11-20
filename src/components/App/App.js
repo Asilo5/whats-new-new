@@ -36,7 +36,7 @@ class App extends Component {
   render () {
     return (
       <section className="app">
-        <h1>What's New?</h1>
+        <h1>What's New Times?</h1>
         <Menu allNews={this.state.allNews} filterNews={this.filterNews} />
         <SearchForm searchNews={this.searchNews} />
         <NewsContainer currentNews={this.state.currentNews} />
