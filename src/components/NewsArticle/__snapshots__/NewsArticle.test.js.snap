@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NewsArticle should match snapshot with all information passing in correctly 1`] = `
-<section>
+<section
+  className="news-article"
+>
   <img
     alt="Title"
     src={
@@ -16,5 +18,8 @@ exports[`NewsArticle should match snapshot with all information passing in corre
   <h3>
     Blah to the Blah
   </h3>
+  <a>
+    Continue Reading Article
+  </a>
 </section>
 `;

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu should match snapshot with all information passing in correctly 1`] = `
-<section>
+<section
+  className="menu"
+>
   <button
     onClick={[Function]}
   >

@@ -22,7 +22,6 @@ button:hover {
 .menu > button:focus {
   color: white;
   background-color: #2ecc71;
-  /* border: 1px solid #2ecc71; */
 }
 
 
