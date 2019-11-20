@@ -4,7 +4,7 @@ import Menu from './Menu';
 
 describe('Menu', () => {
 
-    let mockAllNews = {
+    let mockAllNews = { 
         local: [{
             id: 1,
             headline: "Spider-Man Will Remain in the Marvel Cinematic Universe",
@@ -12,7 +12,7 @@ describe('Menu', () => {
             description: "The web slinger will be the only superhero with the ability to cross between Disney and Sony’s cinematic universes, according to Marvel Studios.",
             url: "https://www.nytimes.com/2019/09/27/business/media/spiderman-mcu-sony-marvel.html"
             },
-            {
+            { 
             id: 2,
             headline: "Warner Bros. Thinks a ‘Lot Has Been Said’ About Joker, So It’s Canceling Red Carpet Interviews",
             img: "https://i.kinja-img.com/gawker-media/image/upload/s--4KmyUB9z--/c_scale,dpr_2.0,f_auto,fl_progressive,q_80,w_800/sapqo9o5c10gyewaopjg.png",
@@ -22,13 +22,25 @@ describe('Menu', () => {
         };
 
     let mockFilterNews = jest.fn();
+    let wrapper;
+
+    beforeEach(() => {
+        wrapper = shallow(<Menu allNews={mockAllNews}
+            filterNews={mockFilterNews} 
+         />);
+    })
 
     it('should match snapshot with all information passing in correctly', () => {
-      const wrapper = shallow(<Menu allNews={mockAllNews}
-                                   filterNews={mockFilterNews} 
-                                />);
-
       expect(wrapper).toMatchSnapshot();
+    })
+
+    it.skip('should run filtereNews when the button is clicked', () => {
+        wrapper.instance().filterNews = jest.fn();
+        wrapper.instance().forceUpdate();
+
+
+        wrapper.find('button').simulate('click', mockAllNews);
+        expect(wrapper.instnace().filterNews).toHaveBeenCalledWith(mockAllNews);
     })
 })
 

@@ -5,7 +5,7 @@ class SearchForm extends Component {
     constructor() {
       super();
       this.state = {
-        newsSearch: ''
+        newsSearch: '' 
       }
     }
 
