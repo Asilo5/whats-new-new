@@ -6,7 +6,7 @@ import SearchForm from '../SearchForm/SearchForm';
 
 class App extends Component {
   constructor() {
-    super();
+    super(); 
     this.state = {
       allNews: {},
       currentNews: [],
