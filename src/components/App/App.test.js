@@ -47,10 +47,10 @@ describe('App', () => {
      expect(wrapper.state('currentNews')).toEqual(mockChosenNews);
   })
 
-  it.skip('should update state of currentNews when searchNews is called', () => {
-    expect(wrapper.state('currentNews')).toEqual(mockChosenNews);
+  it('should update state of currentNews when searchNews is called', () => {
+    wrapper.setState({ currentNews :  mockChosenNews });
 
-    wrapper.instance().searchedNews('Warner Bros');
+    wrapper.instance().searchNews('Warner Bros');
 
     expect(wrapper.state('currentNews')).toEqual(mockFoundNews);
   })
