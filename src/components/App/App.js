@@ -3,6 +3,7 @@ import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
 import SearchForm from '../SearchForm/SearchForm';
+import PropTypes from 'prop-types';
 
 class App extends Component {
   constructor() {
@@ -11,7 +12,7 @@ class App extends Component {
       allNews: {},
       currentNews: [],
       hasError: ''
-    }
+    } 
   }
 
   componentDidMount() {
@@ -43,6 +44,12 @@ class App extends Component {
       </section>
     );
   }
+}
+
+App.propTypes = {
+  Menu: PropTypes.element,
+  SearchForm: PropTypes.element,
+  NewsContainer: PropTypes.element
 }
 
 export default App;
