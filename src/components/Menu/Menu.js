@@ -1,5 +1,6 @@
 import React from 'react';
 import './Menu.css'; 
+import PropTypes from 'prop-types';
 
 const Menu = ({ allNews, filterNews }) => {
     return (
@@ -10,7 +11,12 @@ const Menu = ({ allNews, filterNews }) => {
             <button onClick={() => filterNews(allNews.science)} >Science</button>
             <button onClick={() => filterNews(allNews.health)} >Health</button>
         </section>
-    )
+    ) 
+}
+
+Menu.propType = {
+  allNews: PropTypes.object,
+  filterNews: PropTypes.func
 }
 
 export default Menu;
