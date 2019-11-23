@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/whats-new-times/static/css/main.abdec34f.chunk.css",
+    "main.js": "/whats-new-times/static/js/main.cbfb968d.chunk.js",
+    "main.js.map": "/whats-new-times/static/js/main.cbfb968d.chunk.js.map",
+    "runtime-main.js": "/whats-new-times/static/js/runtime-main.fe32ea26.js",
+    "runtime-main.js.map": "/whats-new-times/static/js/runtime-main.fe32ea26.js.map",
+    "static/js/2.534a1664.chunk.js": "/whats-new-times/static/js/2.534a1664.chunk.js",
+    "static/js/2.534a1664.chunk.js.map": "/whats-new-times/static/js/2.534a1664.chunk.js.map",
+    "index.html": "/whats-new-times/index.html",
+    "precache-manifest.4392e787125e17dbdedbaad1270a330b.js": "/whats-new-times/precache-manifest.4392e787125e17dbdedbaad1270a330b.js",
+    "service-worker.js": "/whats-new-times/service-worker.js",
+    "static/css/main.abdec34f.chunk.css.map": "/whats-new-times/static/css/main.abdec34f.chunk.css.map"
+  }
+}
