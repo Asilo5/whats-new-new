@@ -29,13 +29,25 @@ describe('SearchForm', () => {
        expect(wrapper.state('newsSearch')).toEqual(expected);
     })
 
-    it.skip('should call updateState when button is clicked', () => {
+    it('should call updateState when button is clicked', () => {
+      wrapper.instance().updateState = jest.fn();
+      wrapper.instance().forceUpdate();
       const mockEvent = {
           preventDefault: jest.fn()
       };
-      wrapper.instance().updateState = jest.fn();
-      wrapper.find('button').simulate('click');
+      wrapper.find('button').simulate('click', mockEvent);
       expect(wrapper.instance().updateState).toHaveBeenCalledWith(mockEvent);
+    })
+
+    it('should call handleChange when input changes', () => {
+        expect(wrapper.find('input').props().value).toEqual('');
+        const mockEvent = {
+            target: {
+                value: 'bob'
+            }
+        };
+        wrapper.find('input').simulate('change', mockEvent);
+        expect(wrapper.find('input').props().value).toEqual('bob');
     })
 
     it('should call searchNews and clearInputs when updateState is called', () => {
