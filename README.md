@@ -32,6 +32,6 @@ Plant Shop API was built using:
 | `http://localhost:3001/api/v1/cities` | GET | not needed | Array of all existing cities: `[{"id": 21,"city": "Berlin","avgVegans": "80,000"},...]` |
 | `http://localhost:3001/api/v1/restaurants` | GET | not needed | Array of all existing restaurants: `[{"id": 59,"restaurant_id": 21,"name": "Cat Tuong","restaurantType": "Vietnamese vegan cuisine ","address": "Kastanienallee 89, Berlin, Germany, 10435"},...]` |
 | `http://localhost:3001/api/v1/cities/:id` | GET | not needed | Array of all existing city: `[{"id": 21,"city": "Berlin","avgVegans": "80,000"}]` |
-| `http://localhost:3001/api/v1/restaurants/:id` | GET | not needed | Array of all existing restaurant: `[{"id": 59,"restaurant_id": 21,"name": "Cat Tuong","restaurantType": "Vietnamese vegan cuisine ","address": "Kastanienallee 89, Berlin, Germany, 10435"}] |
+| `http://localhost:3001/api/v1/restaurants/:id` | GET | not needed | Array of all existing restaurant: `[{"id": 59,"restaurant_id": 21,"name": "Cat Tuong","restaurantType": "Vietnamese vegan cuisine ","address": "Kastanienallee 89, Berlin, Germany, 10435"}]` |
 | `http://localhost:3001/api/v1/cities` | POST | `{ city: <String>, avgVegans: <String> }` | New City: `{ city: <String>, avgVegans: <String> }` |
 | `http://localhost:3001/api/v1/restaurants` | POST | `{ name: <String>, restaurantType: <String>, address: <String> }` | New Restaurant: `{ name: <String>, restaurantType: <String>, address: <String> }` | DELETE | not needed | Response: `1` |
